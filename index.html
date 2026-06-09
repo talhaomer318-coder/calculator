@@ -8,42 +8,46 @@
   </head>
 </head>
 
-<body class="bg-amber-500">
-        <div class="bg-blue-500 border-2 border-black-600  ">
-<h1 class="font-bold text-3xl w-auto lg:font-bold lg:text-9xl flex  justify-center">
+<body class="bg-[#FFB703]">
+        <div class=" mt-10 lg:mt-auto" >
+<h1 class="font-bold mx-auto text-3xl md:text-6xl italic lg:font-bold lg:text-9xl flex justify-center">
   Calculator
 </h1>
-<div class="border-2 bg-black  ">
+<div class="border-10 bg-black mx-auto w-30 sm:w-70  md:w-100 lg:w-200  md:h-160 lg:h-200  mx-auto rounded-xl shadow-2xl my-5 md:my-15  lg:my-7">
             <div class="flex justify-center w-auto">
-                <input class="border-2 w-auto  py-10  text-white text-center bg-black lg:py-20  lg:w-[40%] " type="text" placeholder="TYPE THE NUMBER" id="input-value">
-            </div>
-        <div class=" flex justify-center gap-3 flex-wrap-reverse lg:gap-6  ">
-                   <button class="border-2 p-3 bg-black text-white  lg:p-6 hover:bg-violet-600 active:bg-red-500" onclick="abc(this)">7</button>
-                   <button class="border-2 p-3 bg-black text-white  lg:p-6 hover:bg-violet-600 active:bg-red-500" onclick="abc(this)">8</button>
-                   <button  class="border-2 p-3 bg-black text-white   lg:p-6 hover:bg-violet-600 active:bg-red-500 "onclick="abc(this)">9</button>
-<button class="border-2 p-3 bg-black text-white  lg:p-6 hover:bg-violet-600 active:bg-red-500" onclick="operators(this)">*</button>
-<button class="border-2 p-3 bg-black text-white  lg:p-6 hover:bg-violet-600 active:bg-red-500" onclick="operators(this)">-</button>
+                <input class="border-2 rounded-xl w-[100%] px-auto py-5 lg:py-9  text-white text-center bg-black text-xs sm:text-xl md:text-2xl lg:text-3xl   " type="text" placeholder="TYPE THE NUMBER" id="input-value">
+ 
+                
+              </div>
+              <div class="mt-10">
+        <div class=" flex justify-center gap-3 flex-wrap lg:gap-6   ">
+                   <button class="border-2  h-10 w-10 sm:w-20 lg:w-25  lg:h-20  rounded-xl bg-black text-white hover:bg-violet-600 active:bg-amber-500" onclick="abc(this)">7</button>
+                   <button class="border-2  h-10 w-10 sm:w-20 lg:w-25  lg:h-20  rounded-xl bg-black text-white hover:bg-violet-600 active:bg-amber-500"  onclick="abc(this)">8</button>
+                   <button  class="border-2  h-10 w-10 sm:w-20 lg:w-25  lg:h-20  rounded-xl bg-black text-white hover:bg-violet-600 active:bg-amber-500" onclick="abc(this)">9</button>
+<button class="border-2  h-10 w-10 sm:w-20 lg:w-25  lg:h-20  rounded-xl bg-black text-white hover:bg-violet-600 active:bg-amber-500"  onclick="operators(this)">*</button>
+<button class="border-2  h-10 w-10 sm:w-20 lg:w-25  lg:h-20  rounded-xl bg-black text-white hover:bg-violet-600 active:bg-amber-500"  onclick="operators(this)">-</button>
 </div>
-<div class=" flex justify-center gap-3 my-12px lg:gap-6 flex-wrap-reverse my-[25px]">
-    <button class="border-2 p-3 bg-black text-white lg:p-6 hover:bg-violet-600 active:bg-red-500" onclick="abc(this)">4</button>
-    <button class="border-2 p-3 bg-black text-white lg:p-6 hover:bg-violet-600 active:bg-red-500" onclick="abc(this)">5</button>
-<button class="border-2 p-3 bg-black text-white lg:p-6 hover:bg-violet-600 active:bg-red-500" onclick="abc(this)">6</button>
-<button class="border-2 p-3 bg-black text-white lg:p-6 hover:bg-violet-600 active:bg-red-500" onclick="operators(this)">/</button>
-<button class="border-2 p-3 bg-black text-white lg:p-6 hover:bg-violet-600 active:bg-red-500" onclick="operators(this)">+</button>
+<div class=" flex justify-center gap-3 my-12px lg:gap-6 flex-wrap my-[25px]">
+    <button class="border-2  h-10 w-10 sm:w-20 lg:w-25  lg:h-20  rounded-xl bg-black text-white hover:bg-violet-600 active:bg-amber-500"  onclick="abc(this)">4</button>
+    <button class="border-2  h-10 w-10 sm:w-20 lg:w-25  lg:h-20  rounded-xl bg-black text-white hover:bg-violet-600 active:bg-amber-500"  onclick="abc(this)">5</button>
+<button class="border-2  h-10 w-10 sm:w-20 lg:w-25  lg:h-20  rounded-xl bg-black text-white hover:bg-violet-600 active:bg-amber-500"  onclick="abc(this)">6</button>
+<button class="border-2  h-10 w-10 sm:w-20 lg:w-25  lg:h-20  rounded-xl bg-black text-white hover:bg-violet-600 active:bg-amber-500"  onclick="operators(this)">/</button>
+<button class="border-2  h-10 w-10 sm:w-20 lg:w-25  lg:h-20  rounded-xl bg-black text-white hover:bg-violet-600 active:bg-amber-500"  onclick="operators(this)">+</button>
 </div>
-<div class=" flex justify-center gap-3 lg:gap-6 flex-wrap-reverse">
-        <button class=" border-2 p-3 bg-black text-white lg:p-6 hover:bg-violet-600 active:bg-red-500" onclick="abc(this)">0</button>
-    <button class=" border-2 p-3 bg-black text-white lg:p-6 hover:bg-violet-600 active:bg-red-500" onclick="abc(this)">1</button>
-<button class=" border-2 p-3 bg-black text-white lg:p-6 hover:bg-violet-600 active:bg-red-500" onclick="abc(this)">2</button>
-<button class=" border-2 p-3 bg-black text-white lg:p-6 hover:bg-violet-600 active:bg-red-500" onclick="abc(this)">3</button>
-<button class=" border-2 p-3 bg-black text-white lg:p-6  hover:bg-violet-600 active:bg-red-500" onclick="calculate()">=</button>
+<div class=" flex justify-center gap-3 lg:gap-6 flex-wrap">
+        <button class="border-2  h-10 w-10 sm:w-20 lg:w-25  lg:h-20  rounded-xl bg-black text-white hover:bg-violet-600 active:bg-amber-500"  onclick="abc(this)">0</button>
+    <button class="border-2  h-10 w-10 sm:w-20 lg:w-25  lg:h-20  rounded-xl bg-black text-white hover:bg-violet-600 active:bg-amber-500"  onclick="abc(this)">1</button>
+<button class="border-2  h-10 w-10 sm:w-20 lg:w-25  lg:h-20  rounded-xl bg-black text-white hover:bg-violet-600 active:bg-amber-500"  onclick="abc(this)">2</button>
+<button class="border-2  h-10 w-10 sm:w-20 lg:w-25  lg:h-20  rounded-xl bg-black text-white hover:bg-violet-600 active:bg-amber-500"  onclick="abc(this)">3</button>
+<button class="border-2  h-10 w-10 sm:w-20 lg:w-25  lg:h-20  rounded-xl bg-black text-white hover:bg-violet-600 active:bg-amber-500"  onclick="calculate()">=</button>
 
 
 </div>
-<div class=" flex justify-center gap-3 my-[12px] lg:gap-6 flex-wrap-reverse my-[25px] ">
-    <button class="border-2 p-3 bg-black text-white lg:p-6 hover:bg-violet-600 active:bg-red-500" onclick="clearvalue()">C</button>
+<div class=" flex justify-center gap-3 my-[12px] lg:gap-6 flex-wrap my-[25px] ">
+    <button class="border-2 h-10  lg:h-20  w-50 lg:w-[50%] rounded-xl bg-black text-white hover:bg-violet-600 active:bg-slate-800 text-xl md:text-2xl lg:text-3xl" onclick="clearvalue()">Clear</button>
 </div>
 </div>
+  </div>
 
 <script src="app.js"></script>
 </body>
